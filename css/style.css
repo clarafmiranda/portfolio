@@ -4,28 +4,27 @@
     Las modification: June 12, 2019
 */
 
-
 /*ANIMATIONS
 =====================*/
-@keyframes vertical{
-    50%{
-      bottom: 24%;
-    }
+@keyframes vertical {
+  50% {
+    bottom: 24%;
+  }
 }
-
 
 /*RESET
 =====================*/
 
-*{
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-ul, ol{
+ul,
+ol {
   list-style: none;
 }
 
@@ -33,18 +32,17 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Lato', sans-serif;
-  background-color: #FAFAFC;
+  background-color: #fafafc;
 }
 
 .part {
   padding: 24% 8%;
 }
 
-
 /*ARROW-SCROLL
 =====================*/
 
-.arrow{
+.arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,28 +50,27 @@ body {
   bottom: 8%;
   right: 2%;
   cursor: default;
-  -webkit-user-select:none;
+  -webkit-user-select: none;
   animation: vertical 8s infinite;
 }
 
-.arrow h6{
+.arrow h6 {
   font-size: 14px;
   font-weight: 700;
   line-height: 28px;
-  color: #FA4D67;
+  color: #fa4d67;
   transform: rotate(-90deg);
 }
 
-.arrow img{
+.arrow img {
   margin-top: 10px;
   width: 12px;
 }
 
-
 /*BURGER-MENU
 =====================*/
 
-.burger-menu{
+.burger-menu {
   display: inline-block;
   cursor: pointer;
   margin: 24px;
@@ -83,29 +80,30 @@ body {
   z-index: 100;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 16px;
   height: 2px;
-  background-color: #2C2C33;
+  background-color: #2c2c33;
   margin: 4px 0;
   transition: 0.4s;
 }
 
-
 /*HEADER-NAV
 =====================*/
 
-nav{
+nav {
   z-index: 10;
   position: fixed;
   right: 0;
   left: 0;
   width: 100%;
-  background-color: #FAFAFC;
+  background-color: #fafafc;
   text-align: center;
-  padding: 32px 0 ;
+  padding: 32px 0;
   display: none;
-  box-shadow: 0px 4px 8px 0px rgba(44,44,51,.08);
+  box-shadow: 0px 4px 8px 0px rgba(44, 44, 51, 0.08);
 }
 
 ul {
@@ -115,107 +113,105 @@ ul {
   align-items: center;
 }
 
-nav ul li:not(:last-child){
+nav ul li:not(:last-child) {
   margin-bottom: 16px;
 }
 
-nav ul li a{
-  color: #2C2C33;
+nav ul li a {
+  color: #2c2c33;
   text-decoration: none;
   font-weight: 700;
 }
 
-nav ul li a:hover{
-  color: #FA4D67;
+nav ul li a:hover {
+  color: #fa4d67;
 }
-
 
 /*HOME
 =====================*/
 
 #home {
-  background-color: rgba(44,44,51,.025);
+  background-color: rgba(44, 44, 51, 0.025);
 }
 
-h1, h4{
-  color: #2C2C33;
+h1,
+h4 {
+  color: #2c2c33;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
 }
 
-h2{
-  color: #2C2C33;
+h2 {
+  color: #2c2c33;
   font-size: 80px;
   font-weight: 700;
 }
 
-h3{
-  color: #2C2C33;
+h3 {
+  color: #2c2c33;
   font-size: 56px;
   font-weight: 700;
 }
 
-#welcome .container{
+#welcome .container {
   display: flex;
   flex-direction: column;
 }
 
-.bar{
+.bar {
   width: 80px;
   height: 8px;
-  background-color: #FA4D67;
+  background-color: #fa4d67;
   display: inline-block;
   margin: 32px 0px;
 }
 
-.intro{
+.intro {
   display: inline-block;
   position: relative;
   width: 416px;
 }
 
-
 /*PROJECTS
 =====================*/
 
-h3.mobile{
+h3.mobile {
   display: initial;
 }
 
-.description h3.desktop{
+.description h3.desktop {
   display: none;
 }
 
-.content:not(:last-child){
+.content:not(:last-child) {
   margin-bottom: 72px;
 }
 
-.p-right{
+.p-right {
   display: flex;
   flex-direction: column-reverse;
   margin: 16px 0;
 }
 
-.p-left{
+.p-left {
   display: flex;
   flex-direction: column-reverse;
   margin: 16px 0;
 }
 
-.description{
+.description {
   display: flex;
   flex-direction: column;
-
 }
 
-p{
-  color: #2C2C33;
+p {
+  color: #2c2c33;
   font-size: 16px;
   line-height: 28px;
 }
 
-a.btn{
+a.btn {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
@@ -224,23 +220,22 @@ a.btn{
   margin-top: 32px;
   width: 192px;
   padding: 10px 0px;
-  border: 1px solid #FA4D67;
-  color: #FA4D67;
+  border: 1px solid #fa4d67;
+  color: #fa4d67;
 }
 
-a.btn:hover, a.btn:active{
-  background-color: #FA4D67;
-  color: #FAFAFC;
+a.btn:hover,
+a.btn:active {
+  background-color: #fa4d67;
+  color: #fafafc;
 }
-
 
 /*ABOUT
 =====================*/
 
 #about {
-  background-color: rgba(44,44,51,.025);
+  background-color: rgba(44, 44, 51, 0.025);
 }
-
 
 /*CONTACT
 =====================*/
@@ -249,54 +244,78 @@ a.btn:hover, a.btn:active{
   background: #222226;
 }
 
-#contact h3, #contact p{
-  color: #FAFAFC;
+#contact h3,
+#contact p {
+  color: #fafafc;
 }
 
-#contact a{
-  color: #FA5A72;
+#contact a {
+  color: #fa5a72;
 }
 
-#contact a.btn:hover, a.btn:active{
-  background-color: #FA4D67;
-  color: #FAFAFC;
+#contact a.btn:hover,
+a.btn:active {
+  background-color: #fa4d67;
+  color: #fafafc;
 }
 
-.thanks{
+.thanks {
   width: 416px;
 }
-
 
 /*GRID col=12 medianil=1.5%
 =====================*/
 /* ancho columna del grid = al ancho de 12 (6,985%) x nº de columnas que ocupa + ancho medianil (1.5%) x nº medianiles que ocupa */
 
-[class^="col_"]{
+[class^='col_'] {
   float: left;
 }
-[class^="col_"]:not(:last-child){
+[class^='col_']:not(:last-child) {
   margin-right: 1.5%;
 }
-.col_12_of_12 {width: 100%;} /* 6.958%x12 + 1.5x12 */
-.col_11_of_12 {width: 91.54%;} /* 6.958%x11 + 1.5x10 */
-.col_10_of_12 {width: 83.08%;} /* 6.958%x10 + 1.5x9 */
-.col_9_of_12 {width: 74.62%;} /* 6.958%x9 + 1.5x8 */
-.col_8_of_12 {width: 66.16%;} /* 6.958%x8 + 1.5x7 */
-.col_7_of_12 {width: 57.70%;} /* 6.958%x7 + 1.5x6 */
-.col_6_of_12 {width: 49.25%;} /* 6.958%x6 + 1.5x5 */
-.col_5_of_12 {width: 40.79%;} /* 6.958%x5 + 1.5x4 */
-.col_4_of_12 {width: 32.33%;} /* 6.958%x4 + 1.5x3 */
-.col_3_of_12 {width: 23.87%;} /* 6.958%x3 + 1.5x2 */
-.col_2_of_12 {width: 15.41%;} /* 6.958%x2 + 1.5x1 */
-.col_1_of_12 {width: 6.958%;} /* 6.958%x1 + 1.5x0 */
+.col_12_of_12 {
+  width: 100%;
+} /* 6.958%x12 + 1.5x12 */
+.col_11_of_12 {
+  width: 91.54%;
+} /* 6.958%x11 + 1.5x10 */
+.col_10_of_12 {
+  width: 83.08%;
+} /* 6.958%x10 + 1.5x9 */
+.col_9_of_12 {
+  width: 74.62%;
+} /* 6.958%x9 + 1.5x8 */
+.col_8_of_12 {
+  width: 66.16%;
+} /* 6.958%x8 + 1.5x7 */
+.col_7_of_12 {
+  width: 57.7%;
+} /* 6.958%x7 + 1.5x6 */
+.col_6_of_12 {
+  width: 49.25%;
+} /* 6.958%x6 + 1.5x5 */
+.col_5_of_12 {
+  width: 40.79%;
+} /* 6.958%x5 + 1.5x4 */
+.col_4_of_12 {
+  width: 32.33%;
+} /* 6.958%x4 + 1.5x3 */
+.col_3_of_12 {
+  width: 23.87%;
+} /* 6.958%x3 + 1.5x2 */
+.col_2_of_12 {
+  width: 15.41%;
+} /* 6.958%x2 + 1.5x1 */
+.col_1_of_12 {
+  width: 6.958%;
+} /* 6.958%x1 + 1.5x0 */
 
 .active {
-  color: #FA4D67;
+  color: #fa4d67;
 }
 
-@media (min-width:780px){
-
-  .burger-menu{
+@media (min-width: 780px) {
+  .burger-menu {
     display: none;
   }
 
@@ -304,14 +323,13 @@ a.btn:hover, a.btn:active{
     padding: 4% 16%;
   }
 
-
   /*HEADER-NAV
   =====================*/
 
-  nav{
+  nav {
     display: block;
-    box-shadow: 0px 4px 8px 0px rgba(44,44,51,0);
-    background-color: rgba(44,44,51,0);
+    box-shadow: 0px 4px 8px 0px rgba(44, 44, 51, 0);
+    background-color: rgba(44, 44, 51, 0);
   }
 
   ul {
@@ -320,96 +338,95 @@ a.btn:hover, a.btn:active{
     justify-content: flex-end;
   }
 
-  nav ul li{
+  nav ul li {
     padding: 32px 0 0 32px;
   }
 
-  nav ul li a{
-    color: #2C2C33;
+  nav ul li a {
+    color: #2c2c33;
     text-decoration: none;
     font-weight: 700;
   }
 
-  nav ul li:not(:last-child){
+  nav ul li:not(:last-child) {
     margin-bottom: 0px;
   }
 
-  nav ul li:last-child{
+  nav ul li:last-child {
     margin-right: 6.958%;
   }
 
-  nav ul li a:hover{
-    color: #FA4D67;
+  nav ul li a:hover {
+    color: #fa4d67;
   }
 
   /*HOME
   =====================*/
 
-  #home, #about, #contact {
+  #home,
+  #about,
+  #contact {
     padding: 10% 16%;
   }
 
-  .bar{
+  .bar {
     margin: 40px 0px;
   }
-
 
   /*ARROW-SCROLL
   =====================*/
 
-  .arrow{
+  .arrow {
     right: 4%;
   }
 
-  .arrow h6{
+  .arrow h6 {
     font-size: 16px;
   }
 
-  .arrow img{
+  .arrow img {
     width: 20px;
   }
-
 
   /*PROJECTS
   =====================*/
 
-  h3.mobile{
+  h3.mobile {
     display: none;
   }
 
-  .description h3.desktop{
+  .description h3.desktop {
     display: initial;
   }
 
-  .content{
+  .content {
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
   }
 
-  .content:not(:last-child){
+  .content:not(:last-child) {
     margin-bottom: 24px;
   }
 
-  .p-left{
+  .p-left {
     flex-direction: row;
     align-items: center;
   }
 
-  .p-right{
+  .p-right {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin: 16px 0;
   }
 
-  .p-right .description{
+  .p-right .description {
     margin-left: 50px;
   }
 
-  .p-left .description{
+  .p-left .description {
     margin-right: 50px;
   }
-
 }
