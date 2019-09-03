@@ -17,4 +17,4 @@ ul.onclick = function() {
 };
 
 /* This variable to make sure the menu doesn't disappear on full-sized screens */
-var x = window.matchMedia('(max-width: 780px)');
+var x = window.matchMedia('(max-width: 680px)');
