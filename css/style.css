@@ -284,6 +284,10 @@ footer #ToTop img {
     font-size: 18px;
   }
 
+  #bg-lines, #bg-icons {
+    display: none;
+  }
+
 }
 
 @media (min-width: 680px) {
