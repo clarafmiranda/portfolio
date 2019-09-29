@@ -4,20 +4,47 @@
     Last modification: Aug 20, 2019
 */
 
+
 /*ANIMATIONS
 =====================*/
+
+@keyframes bg-shape-move{
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.64;
+  }
+
+  95%{
+    opacity: 0.64;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;}
+}
+
+
 @keyframes vertical {
   0%, 100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(32px);
   }
 }
 
+
+#bg-lines {
+  display: none;
+}
+
+
 /*RESET
 =====================*/
-
 * {
   margin: 0;
   padding: 0;
@@ -38,38 +65,37 @@ body {
 }
 
 main, footer {
-  margin: 0 24px;
+  margin: 0 16px;
 }
 
 h2, h3, h5, h6 {
   font-family: 'Libre Baskerville', serif;
 }
 
-p{
+p {
   font-weight: 400;
   font-size: 16px;
   margin: 16px 0;
 }
 
-a{
+a {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   color: #FF2257;
 }
 
-a:hover span , #more a:hover span{
+a:hover span, #more a:hover span {
   border-bottom: solid 2px #FF2257;
 }
 
-#projects a img, #mailto a img{
+#projects a img, #mailto a img {
   width: 16px;
   margin-right: 8px;
 }
 
 /*BURGER-MENU
 =====================*/
-
 .burger-menu {
   display: inline-block;
   cursor: pointer;
@@ -90,16 +116,15 @@ div#burger .bar1, .bar2, .bar3 {
 
 /*HEADER-NAV
 =====================*/
-
 nav {
   position: fixed;
   z-index: 100;
   right: 0;
   left: 0;
-  top:0;
+  top: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(250,250,252,0.96);
+  background-color: rgba(250, 250, 252, 0);
   text-align: center;
   display: none;
 }
@@ -132,27 +157,26 @@ nav ul li a:hover {
 
 /*HOME-WELCOME
 =====================*/
-
 h3 {
   font-size: 32px;
   font-weight: 700;
   padding-top: 96px;
 }
 
-h1{
+h1 {
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
   margin-top: 32px;
 }
 
-h6{
-  font-size: 11px;
+h6 {
+  font-size: 14px;
   margin-top: 32px;
   font-weight: 400;
 }
 
-#welcome img{
+#welcome img {
   margin-top: 24px;
   -webkit-user-select: none;
   animation: vertical 4s infinite;
@@ -160,54 +184,46 @@ h6{
 
 /*PROJECTS
 =====================*/
-
-#projects{
+#projects {
   margin-top: 64px;
 }
 
-#projects img{
+#projects img {
   width: 100%;
 }
 
-h2{
+h2 {
   font-size: 32px;
   font-weight: 700;
   margin-top: 16px;
 }
 
-#projects article:not(:first-child){
+#projects article:not(:first-child) {
   margin-top: 56px;
 }
 
-#more{
+#more {
   margin: 136px 0;
 }
 
-#more h4{
-  font-size: 22px;
+#more h4 {
+  font-size: 18px;
 }
 
 /*MailTO
 =====================*/
-
-#mailto h2{
-  font-size: 40px;
+#mailto h2 {
+  font-size: 32px;
 }
 
-#mailto p{
+#mailto p {
   margin: 24px 0;
   font-size: 20px;
 }
 
-#mailto a{
-  font-size: 22px;
-}
-
-
 /*FOOTER
 =====================*/
-
-#closing{
+#closing {
   margin-top: 32px;
   display: flex;
   flex-direction: row;
@@ -215,21 +231,19 @@ h2{
   align-items: center;
 }
 
-#credits{
+#credits {
   margin-bottom: 64px;
   opacity: 0.4;
 }
 
-footer #ToTop img{
+footer #ToTop img {
   width: 24px;
   margin-right: 16px;
 }
 
-
 /*LINKS
 =====================*/
-
-#links{
+#links {
   margin-top: 88px;
   margin-bottom: 32px;
   display: flex;
@@ -238,15 +252,15 @@ footer #ToTop img{
   align-items: center;
 }
 
-#links li{
+#links li {
   margin-left: 24px;
 }
 
-#links li a img{
+#links li a img {
   width: 20px;
 }
 
-#logo a{
+#logo a {
   color: #FAFAFC;
   font-size: 35px;
   display: inline-block;
@@ -255,56 +269,91 @@ footer #ToTop img{
   background-color: #FF2257;
 }
 
-#logo a:hover{
+#logo a:hover {
   background-color: #2C2C33;
   color: #FAFAFC;
 }
 
-
 @media (min-width: 560px) {
 
   main, footer {
-    width: 82%;
-    margin-left: 18%;
-    padding-right: 16px;
+    margin: 0 32px;
   }
 
-  #links{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 18%;
-    margin-bottom: 64px;
-    flex-direction: column;
-  }
-
-  #links li{
-    margin-left: 0px;
-    margin-bottom: 16px;
-  }
-
-  #links li a img{
-    margin: 0;
+  a {
+    font-size: 18px;
   }
 
 }
 
-
 @media (min-width: 680px) {
-
   .burger-menu {
     display: none;
   }
 
+  #bg-lines {
+    position: fixed;
+    width: 84%;
+    margin-left: 16%;
+    padding-right: 16px;
+    top: 0;
+    opacity: 0.64;
+    z-index: -10;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #bg-lines div:not(:last-child){
+    width: 33.33%;
+  }
+
+  #bg-icons {
+    position: fixed;
+    width: 84%;
+    margin-left: 16%;
+    padding-right: 16px;
+    top: 0;
+    z-index: -8;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #bg-icons div:not(:last-child){
+    width: 33.33%;
+  }
+
+  #bg-icons div:nth-child(1) img{
+    position: relative;
+    left: -6px;
+    animation: bg-shape-move 28s ease-in-out infinite;
+  }
+
+  #bg-icons div:nth-child(2) img{
+    position: relative;
+    left: -2px;
+    animation: bg-shape-move 32s ease-in-out infinite;
+  }
+
+  #bg-icons div:nth-child(3) img{
+    position: relative;
+    right: -3px;
+    animation: bg-shape-move 24s ease-in-out infinite;
+  }
+
+  #bg-icons div:nth-child(4) img{
+    position: relative;
+    right: -6px;
+    animation: bg-shape-move 30s ease-in-out infinite;
+  }
 
   /*HEADER-NAV
   =====================*/
-
-
   nav {
     display: block;
     height: inherit;
-    background-color: rgba(250,250,252,1);
+    /* background-color: rgba(250, 250, 252, 1); */
     text-align: center;
   }
 
@@ -328,13 +377,78 @@ footer #ToTop img{
     font-weight: 600;
   }
 
-  nav ul#menulist li:first-child, nav ul#menulist li:nth-child(2){
+  nav ul#menulist li:first-child, nav ul#menulist li:nth-child(2) {
     margin-right: 20px;
   }
 
   nav ul li a {
     font-size: 18px;
   }
+
+  /*MAIN
+  =====================*/
+  main, footer {
+    width: 80%;
+    margin-left: 20%;
+    padding-right: 16px;
+  }
+
+  #links {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 19%;
+    margin-bottom: 64px;
+    flex-direction: column;
+  }
+
+  #links li {
+    margin-left: 0px;
+    margin-bottom: 16px;
+  }
+
+  #links li a img {
+    margin: 0;
+  }
+
+  /*WELCOME
+  =====================*/
+  #welcome {
+    width: 74%;
+    padding-top: 96px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  h3 {
+    font-size: 58px;
+    padding-top: 112px;
+  }
+
+  h6 {
+    margin-top: 40px;
+  }
+
+  /*PROJECTS
+  =====================*/
+
+  #more h4 {
+    font-size: 22px;
+  }
+
+  /*MailTO
+  =====================*/
+
+  #mailto a {
+    font-size: 22px;
+  }
+
+}
+
+@media (min-width: 840px) {
 
   /*MAIN
   =====================*/
@@ -345,89 +459,58 @@ footer #ToTop img{
     padding-right: 16px;
   }
 
-  #links{
+  #links {
     width: 16%;
   }
 
-  /*WELCOME
-  =====================*/
-
-  #welcome{
-    width: 74%;
-    padding-top: 96px;
-  }
-
-  h1{
-    font-size: 24px;
-    margin-top: 40px;
-  }
-
-  h3 {
-    font-size: 58px;
-    padding-top: 112px;
-  }
-
-  h6{
-    margin-top: 40px;
+  #welcome {
+    width: 64%;
   }
 
   /*PROJECTS
   =====================*/
-
-  #projects{
+  #projects {
     display: flex;
     flex-direction: row;
   }
 
-  #projects article{
+  #projects article {
     width: 33.33%;
   }
 
-  #projects article:not(:first-child){
+  #projects article:not(:first-child) {
     margin-top: 0px;
   }
 
-  #projects article h2, #projects article p{
+  #projects article h2, #projects article p {
     margin-right: 32px;
   }
 
-  #more{
+  #more {
     margin: 144px 0;
     margin-left: 33.33%
   }
 
-  #more h4{
-    font-size: 22px;
-  }
-
   /*MailTO
   =====================*/
-
-  #mailto{
+  #mailto {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
-  #mailto h2{
+  #mailto h2 {
+    font-size: 39px;
     width: 33.33%;
   }
 
-  #mailto div{
+  #mailto div {
     width: 66.66%;
   }
 
   /*FOOTER
   =====================*/
-
-  #closing{
+  #closing {
     margin-top: 160px;
-  }
-
-}
-
-@media (min-width: 840px) {
-  #welcome{
-    width: 64%;
   }
 }
