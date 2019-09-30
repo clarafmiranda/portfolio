@@ -188,6 +188,14 @@ h6 {
   margin-top: 64px;
 }
 
+#projects a.img img {
+  width: 100%;
+}
+
+#projects a.img img:hover{
+  opacity: 0.96;
+}
+
 #projects img {
   width: 100%;
 }
@@ -275,6 +283,10 @@ footer #ToTop img {
 }
 
 @media (min-width: 560px) {
+
+  #bg-lines, #bg-icons img {
+    display: none;
+  }
 
   main, footer {
     margin: 0 32px;
